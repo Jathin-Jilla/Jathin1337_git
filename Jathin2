@@ -1,0 +1,32 @@
+import java.util.*;
+class newyear1
+{
+public static void main(String args[])throws ArrayIndexOutOfBoundsException
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter n value");
+int n=sc.nextInt();
+String[] choclates=new String[5];
+choclates[0]="kitkat";
+choclates[1]="Dairymilk";
+choclates[2]="M&M";
+choclates[3]="Munch";
+choclates[4]="Bounty";
+String[] sweet=new String[5];
+sweet[0]="Rasagulla";
+sweet[1]="Doodh Pedha";
+sweet[2]="Gulab jamun";
+sweet[3]="Jelebi";
+sweet[4]="Mothi chur";
+newyear1 nr=new newyear1();
+for(int i=0;i<n;i++)
+{
+System.out.println("For child"+i+" ");
+int j=i%4;
+if(j<4)
+{
+System.out.println(sweet[i]+" "+choclates[i]);
+}
+}
+}
+}
